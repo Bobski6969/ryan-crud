@@ -1,4 +1,6 @@
 <?php
+    
+    
     //include the database coonnection file so we can use $conn
     include 'db.php';
     //IF the form was submitted with the add butoon:
@@ -25,9 +27,11 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>simple CRUD</title>
+                <link rel="stylesheet" href="index.css">
+            
             </head>
             <body>
-                <h1>Student List (simple CRUD)</h1>
+                <h1>Student Database</h1>
                 <!-- form to add a new student -->
 
                 <h2>Add a student</h2>
@@ -52,8 +56,8 @@
                      <table border="1" cellpadding="8" cellspacing="0">
                         <tr>
                             <th>ID</th>
-                            <th>name</th>
-                            <th>email</th>
+                            <th>Name</th>
+                            <th>Email</th>
                             <th>Actions</th>
                         </tr>
 

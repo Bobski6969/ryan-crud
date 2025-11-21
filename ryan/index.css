@@ -1,0 +1,187 @@
+
+@font-face {
+    font-family: Custom;
+    src: url(Revamped-X3q1a.ttf);
+}
+
+
+
+@font-face {
+    font-family: Custom2;
+    src: url(NeotericBold-xq1q.ttf);
+}
+
+@font-face {
+    font-family: Custom3;
+    src: url(PrimetimeRegular-vOL9.ttf);
+}
+
+@font-face {
+    font-family: Custom4;
+    src: url(PoLigon-Yqxvv.otf);
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-image: url('pexels-pixabay-355887.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #e6f0ff;
+    font-family: custom;
+    text-shadow: 0 0 14px #c5ddf3;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #cce0ff;
+    font-family: custom2;
+    font-size: 8px;
+    font-weight: bold;
+    text-shadow: 0 0 14px #c5ddf3;
+}
+
+/* Form styling */
+form {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(167, 190, 233, 0.979), rgba(116, 80, 245, 0.452));
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 30px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 14px #c5ddf3;
+    width: 500px;
+    
+}
+
+label {
+    font-size: 1.2rem;
+    color: #e6f0ff;
+    font-family: custom3;
+    text-shadow: 0 0 14px #170069;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    background-color: rgba(3, 9, 59, 0.377);
+    color: #fff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 14px #c5ddf3;
+    font-family: custom2;
+    font-weight: 600px;
+   
+}
+
+button {
+  --c1: #ffffff;
+  --c2: #5f91ec;
+  --c3: #ffffffe3;
+
+  background: linear-gradient(45deg, var(--c1), var(--c2), var(--c3));
+  background-size: 200% 200%; /* needed for motion */
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 14px #c5ddf3;
+  font-family: custom;
+  text-shadow: 0 0 14px #00000036;
+
+  transition: transform 0.25s ease, box-shadow 0.35s ease, filter 0.4s ease;
+}
+
+button:hover {
+  /* swap accent color and animate the gradient position */
+  --c2: #0b34bb8f;  /* change color on hover */
+  animation: sweep 1.2s ease-in-out infinite alternate;
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 10px 24px #b3c9ff80;
+}
+
+@keyframes sweep {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  button { background-size: auto; }
+  button:hover { animation: none; }
+}
+
+
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 95%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.459), rgba(95, 144, 236, 0.521), rgba(255, 255, 255, 0.5));
+    border-radius: 10px;
+    overflow: hidden;
+    border: #ffffff;
+    box-shadow: 0 0 14px #c5ddf3;
+    background-color: rgba(3, 9, 59, 0.377);
+    
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-shadow: 0 0 14px #ffffff94;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+th {
+    background: linear-gradient(25deg,rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.534), rgba(95, 144, 236, 0.733), rgba(0, 0, 0, 0.411), rgba(79, 112, 202, 0.726));
+    
+    font-size: 1.2rem;
+}
+
+td a {
+    color: #97dcff;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 14px #00000094;
+}
+
+td a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 30px auto;
+    width: 80%;
+    border: 1px solid #3399ff;
+}
