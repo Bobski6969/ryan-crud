@@ -67,8 +67,8 @@
                         
                         <!-- links pass the student id in the URL -->
                         <td>
-                            <a href="edit.php?id<?php echo $row ['id']; ?>">Edit</a?>
-                            <a href="delete.php?id<?php echo $row ['id']; ?>">Delete</a?>
+                            <a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>
+                            <a href="delete.php?id=<?php echo $row ['id']; ?>">Delete</a?>
                         </td>
                         </tr>
                         <?php } ?>

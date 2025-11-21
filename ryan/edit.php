@@ -48,9 +48,14 @@ $student = mysqli_fetch_assoc($result); // Get the row as an associative array
            value="<?php echo htmlspecialchars($student['email']); ?>" required>
     <br><br>
 
+    <label>Email:</label>
+         <input type="email" name="email"
+         value="<?php echo htmlspecialchars($student['email']); ?>" required>
+    <br><br>
     <!-- When this is clicked, PHP sees $_POST['update'] -->
-    <input type="submit" name="update" value="Update">
-</form>
-
-</body>
-</html>
+    
+        <button type="submit" name="update">Save Changes</button>
+         </form>
+        <p><a href="index.php">Back to list</a></p>
+    </body>
+    </html>
